@@ -1,12 +1,12 @@
 // Phone validation function
 function validatePhoneNumber(phone) {
     // Rule 1: Must start with +968 (Omantel Oman)
-    if (!phone.startsWith("+968")) {
+    if (!phone.startsWith("+971")) { // BUG: changed from +968 to +971
         return false;
     }
     
     // Rule 2: Must be exactly 12 characters (+968 + 8 digits)
-    if (phone.length !== 11) { // BUG: changed from 12 to 11
+    if (phone.length !== 12) { 
         return false;
     }
     
